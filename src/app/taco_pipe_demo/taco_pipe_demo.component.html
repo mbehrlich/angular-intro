@@ -1,0 +1,7 @@
+<div class="example-container">
+    <h3>Taco Pipe Demo</h3>
+
+    <div *ngIf="taco$ | async as currentTaco">
+        <div>{{currentTaco | taco}}</div>
+    </div>
+</div>

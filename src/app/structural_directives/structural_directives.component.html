@@ -1,0 +1,14 @@
+<div class="example-container">
+    <h3>Structural Directives</h3>
+
+    <div class="ngif-block">
+        <button (click)="handleClick()">Toggle text</button>
+
+        <div *ngIf="shouldDisplayText">Text displayed!</div>
+    </div>
+
+    <div *ngFor="let color of colors"
+         [style.color]="color">
+        {{color}}
+    </div>
+</div>

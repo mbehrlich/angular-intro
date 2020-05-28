@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-demo';
+  testText = 'Test text!';
+
+  testEventText = '';
+
+  handleTestEvent(testEventMessage: string): void {
+    this.testEventText = testEventMessage;
+  }
 }
