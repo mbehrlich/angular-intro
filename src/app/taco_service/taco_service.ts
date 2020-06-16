@@ -43,4 +43,21 @@ export class TacoService {
                     console.log(taco);
                 }));
     }
+
+    fetchRandomTaco(): Promise<Taco> {
+
+        return fetch('http://taco-randomizer.herokuapp.com/random/')
+            .then(response => response.json())
+            .then(taco => {
+                console.log(taco);
+                const displayTaco: Taco = {
+                    baseLayer: taco.base_layer.name,
+                    condiment: taco.condiment.name,
+                    mixin: taco.mixin.name,
+                    seasoning: taco.seasoning.name,
+                    shell: taco.shell.name,
+                };
+                return displayTaco;
+            });
+    }
 }

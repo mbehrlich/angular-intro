@@ -13,6 +13,7 @@ import {StructuralDirectivesModule} from './structural_directives/structural_dir
 import {DefaultChangeDetectionModule} from './default_change_detection/default_change_detection.module';
 import {PushChangeDetectionModule} from './push_change_detection/push_change_detection.module';
 import {TacoPipeDemoModule} from './taco_pipe_demo/taco_pipe_demo.module';
+import { FetchExampleModule } from './fetch_example/fetch_example.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {TacoPipeDemoModule} from './taco_pipe_demo/taco_pipe_demo.module';
     DataDisplayModule,
     PropertyBindingModule,
     EventBindingModule,
+    FetchExampleModule,
     TwoWayBindingModule,
     InputBindingModule,
     OutputBindingModule,
